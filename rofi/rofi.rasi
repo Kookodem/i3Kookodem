@@ -1,49 +1,41 @@
-/**
- * Nordic rofi theme
- * Adapted by undiabler <undiabler@gmail.com>
- *
- * Nord Color palette imported from https://www.nordtheme.com/
- *
- */
-
 configuration {
 
 	font: "Envy Code R 15";
 	width: 60;
 	line-margin: 10;
 	lines: 6;
-	columns: 2;
+	columns: 3;
 
-    display-ssh:    "";
+    display-ssh:    ">";
     display-run:    ">";
-    display-drun:   "";
-    display-window: "";
-    display-combi:  "";
-    show-icons:     true;
+    display-drun:   ">";
+    display-window: ">";
+    display-combi:  ">";
+    show-icons:     false;
 }
 
 * {
-	nord0: #2e3440;
-	nord1: #3b4252;
-	nord2: #434c5e;
-	nord3: #4c566a;
+	color0: #2e3440;
+	color1: #3b4252;
+	color2: #434c5e;
+	color3: #4c566a;
 
-	nord4: #d8dee9;
-	nord5: #e5e9f0;
-	nord6: #eceff4;
+	color4: #d8dee9;
+	color5: #e5e9f0;
+	color6: #eceff4;
 
-	nord7: #8fbcbb;
-	nord8: #88c0d0;
-	nord9: #81a1c1;
-	nord10: #5e81ac;
-	nord11: #bf616a;
+	color7: #8fbcbb;
+	color8: #88c0d0;
+	color9: #81a1c1;
+	color10: #5e81ac;
+	color11: #bf616a;
 
-	nord12: #d08770;
-	nord13: #ebcb8b;
-	nord14: #a3be8c;
-	nord15: #b48ead;
+	color12: #d08770;
+	color13: #ebcb8b;
+	color14: #a3be8c;
+	color15: #b48ead;
 
-    foreground:  @nord9;
+    foreground:  @color9;
     backlight:   #ccffeedd;
     background-color:  transparent;
     
@@ -72,21 +64,21 @@ mainbox {
 }
 
 message {
-    color: @nord0;
+    color: @color0;
     padding: 5;
     border-color: @foreground;
     border:  0px 2px 2px 2px;
-    background-color: @nord7;
+    background-color: @color7;
 }
 
 inputbar {
-    color: @nord6;
+    color: @color6;
     padding: 11px;
     background-color: #3b4252;
 
     border: 1px;
     border-radius:  6px 6px 0px 0px;
-    border-color: @nord10;
+    border-color: @color10;
 }
 
 entry, prompt, case-indicator {
@@ -117,7 +109,7 @@ element {
 }
 
 element selected.normal {
-	background-color: @nord7;
+	background-color: @color7;
 	text-color: #2e3440;
 }
 
